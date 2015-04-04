@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ES6 Exploration</title>
+</head>
+<body>
+
+<greeting></greeting>
+
+<script src="../build/lib/browser-polyfill.js"></script>
+<script src="../build/lib/system.js"></script>
+
+<script src="../bower_components/angular/angular.js"></script>
+<script>
+    System.config({
+        baseURL: '/build/',
+        transpiler: 'babel',
+        paths: {
+            babel: '../build/lib/browser-polyfill.js'
+        }
+    });
+    System.import('./app');
+</script>
+</body>
+</html>

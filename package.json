@@ -1,0 +1,16 @@
+{
+    "name": "es6-explore",
+    "description": "A starter template for ES6 (aka ES2015) projects",
+    "repository": "https://github.com/pixelingene/es6-explore.git",
+    "version": "0.0.1",
+    "devDependencies": {
+        "browser-sync": "^2.5.2",
+        "del": "^1.1.1",
+        "gulp": "^3.8.11",
+        "gulp-babel": "^4.0.1",
+        "gulp-watch": "^4.2.2"
+    },
+    "dependencies": {
+        "babel-core": "^5"
+    }
+}
