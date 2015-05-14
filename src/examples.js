@@ -137,3 +137,45 @@ switch (true) {
     case fn3():
         break;
 }
+///////////////////////////
+var context = {}; // Fetch context from somewhere
+
+[
+    'item-1',
+    'item-2',
+    'item-3',
+    'item-4'
+].forEach(function(item){
+        "use strict";
+
+        checkItem(context, item);
+    });
+
+function checkItem(context, item) {
+    "use strict";
+
+    // Use context to test item
+    //...
+    //...
+}
+
+
+var preBoundCheck = checkItem.bind(null, context);
+
+[
+    'item-1',
+    'item-2',
+    'item-3',
+    'item-4'
+].forEach(preBoundCheck);
+
+////////////////////
+var initialValue = (function () {
+
+    var computed = {}; //
+
+    // ... Compute Complex value ... //
+
+    return computed;
+
+})();

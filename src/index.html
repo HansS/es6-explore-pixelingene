@@ -8,19 +8,6 @@
 
 <greeting></greeting>
 
-<script src="../build/lib/browser-polyfill.js"></script>
-<script src="../build/lib/system.js"></script>
-
-<script src="../bower_components/angular/angular.js"></script>
-<script>
-    System.config({
-        baseURL: '/build/',
-        transpiler: 'babel',
-        paths: {
-            babel: '../build/lib/browser-polyfill.js'
-        }
-    });
-    System.import('./app');
-</script>
+<script src="app.bundle.js"></script>
 </body>
 </html>

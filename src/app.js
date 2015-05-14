@@ -1,4 +1,4 @@
-// List of features: http://www.2ality.com/2014/08/es6-today.html
+import angular from 'angular';
 
 //-----------------------------------------
 //                  Modules
@@ -109,7 +109,7 @@ var rangeGenerator = (limit)=> {
     "use strict";
     var counter = 0;
     return {
-        [Symbol.iterator]: function*() {
+        *[Symbol.iterator]() {
             while (counter < limit) {
                 yield counter;
                 counter++;
@@ -132,3 +132,4 @@ angular.bootstrap(document.body, [appModule.name]);
 
 var injector = angular.element(document.body).injector();
 injector.get('$controller')('TestController');
+
